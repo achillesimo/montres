@@ -9,4 +9,3 @@ spring:
         git:
          uri: https://github.com/achillesimo/montres
          searchPaths: services-configuration
-         #uri: file:///Users/ryanjbaxter/git-repos/ryanjbaxter/talks/beginners-guide/beginngers-guide-to-spring-cloud-config
