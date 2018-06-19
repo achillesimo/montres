@@ -8,5 +8,5 @@ spring:
         git:
          username: achillesimo
          password: Mathes13
-         uri: https://gitlab.com/lesmontres/lesmontres.git
-         basedir: E:/services-configuration
+         uri: https://github.com/achillesimo/montres
+         basedir: services-configuration
