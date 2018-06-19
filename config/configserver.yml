@@ -1,0 +1,12 @@
+security.basic.enable: false
+management.security.enabled: false
+spring:
+  profiles:
+    active: git
+  cloud:
+      server:
+        git:
+         username: achillesimo
+         password: Mathes13
+         uri: https://gitlab.com/lesmontres/lesmontres.git
+         basedir: E:/services-configuration
