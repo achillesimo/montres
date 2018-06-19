@@ -6,5 +6,7 @@ spring:
   cloud:
       server:
         git:
+         username: achillesimo
+         password: Mathes13
          uri: https://github.com/achillesimo/montres
          searchPaths: services-configuration
