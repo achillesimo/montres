@@ -5,7 +5,7 @@ WORKDIR /usr/src/directory
 COPY . /usr/src/directory/
 RUN ls -al
 RUN pwd
-SHELL ["/bin/sh", "-c", "mvn clean package -DskipTests"]
+RUN mvn install
 
 # Gération de l'image openjdk
 FROM openjdk:8
