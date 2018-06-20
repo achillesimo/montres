@@ -5,7 +5,7 @@ FROM openjdk:8
 #VOLUME /var/docker/lf-backend
 
 #Copy jar file
-ADD config-server/target/config-server.jar config-server.jar
+ADD target/config-server.jar config-server.jar
 
 #Jar port
 EXPOSE 8888
