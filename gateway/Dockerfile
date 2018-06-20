@@ -1,12 +1,14 @@
-#use openjdk
+#Génératin du jar
+FROM maven:3.5-jdk-8 as MAVEN
+
+WORKDIR /usr/src/gateway
+COPY . /usr/src/gateway/
+RUN mvn clean package -DskipTests
+
+# Gération de l'image openjdk
 FROM openjdk:8
-
-#pour générer le jar mvn clean package 
-#Copy jar file
-ADD target/nomDuJar.jar nomDuJar.jar
-
-#Jar port
-EXPOSE 9090
+WORKDIR /usr/src/gateway
+COPY --from=MAVEN /usr/src/gateway/target/*.jar ./gateway.jar
 
 #Execution
-ENTRYPOINT ["sh", "-c", "java -jar nomDuJar.jar"]
+ENTRYPOINT ["sh", "-c", "java -jar gateway.jar"]

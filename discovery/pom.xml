@@ -52,7 +52,7 @@
 	</dependencyManagement>
 
 	<build>
-		<build>discovery</build>
+		<finalName>directory</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

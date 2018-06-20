@@ -2,8 +2,8 @@ server:
   port: 8761
 eureka:
   client:
-    register-with-eureka: false # Désactive l'autorenregistrement
-    fetch-registry: false # Désactive l'autorenregistrement
+    register-with-eureka: false # Desactive l'autorenregistrement
+    fetch-registry: false # Desactive l'autorenregistrement
 logging:
   level:
     com:
