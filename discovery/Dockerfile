@@ -1,14 +1,14 @@
 #Génératin du jar
 FROM maven:3.5-jdk-8 as MAVEN
 
-WORKDIR /usr/src/directory
-COPY . /usr/src/directory/
+WORKDIR .
+COPY . .
 RUN mvn clean package -DskipTests
 
 # Gération de l'image openjdk
 FROM openjdk:8
-WORKDIR /usr/src/directory
-COPY --from=MAVEN /usr/src/directory/target/*.jar ./directory.jar
+WORKDIR .
+COPY --from=MAVEN ./target/*.jar ./directory.jar
 
 #Execution
 ENTRYPOINT ["sh", "-c", "java -jar directory.jar"]
