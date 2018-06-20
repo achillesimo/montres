@@ -85,6 +85,7 @@
 	</dependencyManagement>
 
 	<build>
+		<build>gateway</build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

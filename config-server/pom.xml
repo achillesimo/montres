@@ -58,6 +58,7 @@
 	</dependencyManagement>
 
 	<build>
+		<build>config-server</build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
