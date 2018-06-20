@@ -3,8 +3,8 @@ FROM maven:3.5-jdk-8 as MAVEN
 
 WORKDIR /usr/src/directory
 COPY . /usr/src/directory/
-SHELL ["/bin/sh", "-c", "ls -al"]
-SHELL ["/bin/sh", "-c", "pwd"]
+RUN ls -al
+RUN pwd
 RUN mvn clean package -DskipTests
 
 # Gération de l'image openjdk
