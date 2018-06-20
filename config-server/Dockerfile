@@ -18,7 +18,7 @@ FROM openjdk:8
 COPY . .
 
 #Copy jar file
-ADD target/config-server.jar config-server.jar
+ADD ./target/config-server.jar config-server.jar
 
 #Execution
 ENTRYPOINT ["sh", "-c", "java -jar config-server.jar"]
