@@ -1,3 +1,8 @@
+FROM maven:3.5-jdk-8 as MAVEN
+
+COPY . .
+RUN mvn clean package -DskipTests
+
 #use openjdk
 FROM openjdk:8
 
@@ -5,7 +10,7 @@ FROM openjdk:8
 #VOLUME /var/docker/lf-backend
 
 #Copy jar file
-ADD target/config-server.jar config-server.jar
+ADD --from=MAVEN target/config-server.jar config-server.jar
 
 #Jar port
 EXPOSE 8888
