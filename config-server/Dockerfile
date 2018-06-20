@@ -2,6 +2,7 @@ FROM maven:3.5-jdk-8 as MAVEN
 
 COPY src /usr/src/config-server/src
 COPY pom.xml /usr/src/config-server
+WORKDIR /usr/src/config-server
 RUN mvn -f /usr/src/config-server/pom.xml clean package -DskipTests
 
 
