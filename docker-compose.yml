@@ -1,8 +1,10 @@
 version: '3'
 services:
   config:
+    image: config-server
     build:
       context: ./config-server
       dockerfile: Dockerfile
     ports:
-      - "8888:8888"
+      - "8000:8888"
+    container_name: config-server
