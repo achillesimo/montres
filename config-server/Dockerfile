@@ -10,7 +10,7 @@ FROM openjdk:8
 #VOLUME /var/docker/lf-backend
 
 #Copy jar file
-ADD --from=MAVEN target/config-server.jar config-server.jar
+COPY --from=MAVEN target/config-server.jar config-server.jar
 
 #Jar port
 EXPOSE 8888
