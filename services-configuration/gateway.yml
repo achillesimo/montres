@@ -11,3 +11,11 @@ routes:
   uri: suivi
   predicates:
   - Path=**api/suivis/user
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://directory:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true

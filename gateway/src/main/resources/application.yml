@@ -10,3 +10,10 @@ spring:
         - Path=/api/users
 server:
   port: 9090
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://directory:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true

@@ -27,6 +27,3 @@ eureka:
       defaultZone: http://directory:8761/eureka
     register-with-eureka: true
     fetch-registry: true
-    instance:
-      leaseRenewalIntervalInSeconds: 5
-      preferIpAddress: true
