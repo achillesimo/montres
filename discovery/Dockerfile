@@ -17,6 +17,7 @@
 
 #use openjdk
 FROM openjdk:8
+COPY . .
 
 
 #Copy jar file

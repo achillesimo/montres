@@ -15,6 +15,7 @@
 
 #use openjdk
 FROM openjdk:8
+COPY . .
 
 #Copy jar file
 ADD target/config-server.jar config-server.jar
