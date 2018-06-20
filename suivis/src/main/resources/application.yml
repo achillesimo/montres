@@ -1,3 +1,6 @@
-spring:
-  application:
-    name: suivis
+
+  spring:
+    application:
+      name: suivis
+
+

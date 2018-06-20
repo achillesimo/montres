@@ -9,3 +9,4 @@ public interface UserFeign {
     @GetMapping("/api/users")
     String lire();
 }
+

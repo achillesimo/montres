@@ -1,0 +1,12 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false # Désactive l'autorenregistrement
+    fetch-registry: false # Désactive l'autorenregistrement
+logging:
+  level:
+    com:
+      netflix:
+        eureka: OFF # Supprime les log erreur
+        discovery: OFF # Supprime les log erreur
