@@ -16,7 +16,7 @@
 FROM openjdk:8
 COPY . .
 #Copy jar file
-ADD target/gateway.jar gateway.jar
+ADD ./target/gateway.jar gateway.jar
 
 #Execution
 ENTRYPOINT ["sh", "-c", "java -jar gateway.jar"]

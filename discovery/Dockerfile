@@ -21,7 +21,7 @@ COPY . .
 
 
 #Copy jar file
-ADD target/config-server.jar directory.jar
+ADD ./target/directory.jar directory.jar
 
 #Execution
 ENTRYPOINT ["sh", "-c", "java -jar directory.jar"]
