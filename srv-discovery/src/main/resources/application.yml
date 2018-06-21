@@ -11,3 +11,10 @@ management:
     web:
       exposure:
         include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://195.154.81.212:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true

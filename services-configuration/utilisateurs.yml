@@ -21,9 +21,9 @@ spring:
       ddl-auto: validate
     database-platform: org.hibernate.dialect.H2Dialect
 
-#eureka:
-#  client:
-#    serviceUrl:
-#      defaultZone: http://back.newtoncorp.fr//eureka
-#    register-with-eureka: true
-#    fetch-registry: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://195.154.81.212:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
