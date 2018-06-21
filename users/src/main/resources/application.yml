@@ -1,11 +1,6 @@
 spring:
-  profiles:
-    active: git
   cloud:
     config:
-      server:
-        git:
-         uri: https://github.com/achillesimo/montres
-         searchPaths: services-configuration
+      uri: http://metier.newtoncorp.fr
   application:
     name: utilisateurs
