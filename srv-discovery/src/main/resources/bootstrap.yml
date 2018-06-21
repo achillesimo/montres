@@ -4,4 +4,7 @@ eureka:
       defaultZone: http://195.154.81.212:8761/eureka
     register-with-eureka: true
     fetch-registry: true
-
+spring:
+  cloud:
+    config:
+      uri: http://195.154.81.212:8888
