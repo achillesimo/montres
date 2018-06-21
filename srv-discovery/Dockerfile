@@ -18,7 +18,7 @@ FROM openjdk:8
 COPY . .
 
 #Copy jar file
-ADD ./target/srv-discovery.jar srv-discovery.jar
+ADD ./srv-discovery.jar srv-discovery.jar
 
 #Execution
 ENTRYPOINT ["sh", "-c", "java -jar srv-discovery.jar"]
