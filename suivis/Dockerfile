@@ -16,7 +16,7 @@
 FROM openjdk:8
 COPY . .
 #Copy jar file
-ADD ./target/suivis.jar suivis.jar
+ADD ./suivis.jar suivis.jar
 
 #Execution
 ENTRYPOINT ["sh", "-c", "java -jar suivis.jar"]

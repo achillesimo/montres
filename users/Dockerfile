@@ -16,7 +16,7 @@
 FROM openjdk:8
 COPY . .
 #Copy jar file
-ADD ./target/utilisateurs.jar utilisateurs.jar
+ADD ./utilisateurs.jar utilisateurs.jar
 
 #Execution
 ENTRYPOINT ["sh", "-c", "java -jar utilisateurs.jar"]
