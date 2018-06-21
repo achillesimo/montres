@@ -4,13 +4,6 @@ spring:
   application:
     name: sidecar
 
-eureka:
-  client:
-    serviceUrl:
-       defaultZone: http://directory:8761/eureka
-    register-with-eureka: true
-    fetch-registry: true
-
 sidecar:
   port: 3000
 management:

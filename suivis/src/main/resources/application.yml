@@ -1,7 +1,4 @@
 spring:
-  cloud:
-    config:
-      uri: http://metier.newtoncorp.fr
   application:
     name: suivis
 
