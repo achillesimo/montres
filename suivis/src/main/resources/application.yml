@@ -1,6 +1,13 @@
-
-  spring:
-    application:
-      name: suivis
+spring:
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+         uri: https://github.com/achillesimo/montres
+         searchPaths: services-configuration
+  application:
+    name: suivis
 
 
