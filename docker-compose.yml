@@ -6,7 +6,7 @@ services:
       context: ./discovery
       dockerfile: Dockerfile
     ports:
-      - "8761:8761"
+      - "82:8761" #
     container_name: directory
 
   config-server:
@@ -15,7 +15,7 @@ services:
       context: ./config-server
       dockerfile: Dockerfile
     ports:
-      - "8888:8888"
+      - "81:8888"
     container_name: config-server
 
   srv-discovery:
@@ -24,7 +24,7 @@ services:
       context: ./srv-discovery
       dockerfile: Dockerfile
     ports:
-      - "5678:5678"
+      - "5432:5678"
     container_name: srv-discovery
 
   gateway:
@@ -33,5 +33,5 @@ services:
       context: ./gateway
       dockerfile: Dockerfile
     ports:
-      - "9090:9090"
+      - "8000:9090" # front.new
     container_name: gateway
